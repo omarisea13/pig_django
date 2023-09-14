@@ -1,6 +1,13 @@
-from django.http import HttpResponse
+   
+    # finegap/views.py
+
 from django.shortcuts import render
 
-# Create your views here.
-def index(request):
-    return HttpResponse("Hello")
+def home(request):
+    return render(request, 'finegap/home.html')
+
+def contacto(request):
+    return render(request, 'finegap/contacto.html')
+
+def acerca_de(request):
+    return render(request, 'finegap/acerca_de.html')
