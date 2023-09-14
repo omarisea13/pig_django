@@ -1,7 +1,10 @@
-from django.urls import path
+# finegap/urls.py
 
+from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("", views.index, name="index")
+    path('', views.home, name='home'),
+    path('contacto/', views.contacto, name='contacto'),
+    path('acerca-de/', views.acerca_de, name='acerca_de'),
 ]
