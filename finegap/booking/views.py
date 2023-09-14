@@ -4,10 +4,10 @@
 from django.shortcuts import render
 
 def home(request):
-    return render(request, 'finegap/home.html')
+    return render(request, 'booking/home.html')
 
 def contacto(request):
-    return render(request, 'finegap/contacto.html')
+    return render(request, 'booking/contacto.html')
 
 def acerca_de(request):
-    return render(request, 'finegap/acerca_de.html')
+    return render(request, 'booking/acerca_de.html')
