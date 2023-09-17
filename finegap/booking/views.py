@@ -11,3 +11,8 @@ def contacto(request):
 
 def acerca_de(request):
     return render(request, 'booking/acerca_de.html')
+
+def destinos(request, destino):
+     return render(request, "booking/destinos.html", {
+        "destino": destino
+    })

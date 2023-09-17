@@ -1,5 +1,3 @@
-#styles.css
-
 /* Estilo de fondo celeste para el cuerpo de la página */
 body {
     background-color: #B4E6E6;
@@ -31,7 +29,7 @@ a {
 
 /* Estilo para el botón dorado */
 .btn-gold {
-    background-color: #FFD700; /* Dorado */
+    background-color: #FFD700;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
