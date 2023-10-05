@@ -5,8 +5,21 @@
 {% endblock %}
 
 {% block body %}
+<div class="contacto">
     <h1>Contáctanos</h1>
     <div>
-        <p>Esto es una página de contacto</p>
+        <form method="post" action="{% url 'contacto' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Enviar</button>
+        </form>
     </div>
+</div>
+<style>
+    body {
+        background-image: url('https://content.r9cdn.net/rimg/dimg/42/2f/addb7f9b-city-4012-16916c05055.jpg?crop=true&width=1366&height=768&xhint=1627&yhint=1054');
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.85;
+    }
 {% endblock %}
